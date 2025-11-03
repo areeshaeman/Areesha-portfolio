@@ -4,14 +4,16 @@ import { motion } from "framer-motion";
 import Screenshot from "../../../assets/Screenshot 2025-08-01 235324.png";
 import Screenshot1 from "../../../assets/Screenshot 2025-08-02 033231.png"
 import screenshot2 from "../../../assets/Screenshot 2025-09-04 220943.png"
+import  screenshot3 from "../../../assets/Screenshot 2025-11-03 024209.png"
+import screenshot4 from "../../../assets/Screenshot 2025-11-03 032248.png"
 
 const projects = [
   {
-    title: "Task Manager App",
+    title: "Swift Cart",
     description: "Full-stack task management app with authentication and drag-and-drop functionality.",
-    image: Screenshot1,
+    image: screenshot4,
     tags: ["React", "Node.js", "MongoDB"],
-    link: "https://your-taskmanager.vercel.app",
+    link: "https://swift-cart-rosy.vercel.app/",
   },
   {
     title: "Netflix Clone",
@@ -27,9 +29,29 @@ const projects = [
     tags: ["Next.js", "Stripe", "Sanity CMS"],
     link: "https://taste-its.vercel.app/",
   },
+    {
+    title:"Car.com",
+    description: "Complete e-commerce platform with cart, checkout, and admin dashboard.",
+    image: screenshot3 ,
+    tags: ["Next.js", "Stripe", "Sanity CMS"],
+    link: "https://cars-com-55zv.vercel.app/",
+  },
+      {
+    title:"Car.com",
+    description: "Complete e-commerce platform with cart, checkout, and admin dashboard.",
+    image: Screenshot1 ,
+    tags: ["Next.js", "Stripe", "Sanity CMS"],
+    link: "https://taste-its.vercel.app/",
+  },
+      {
+    title:"Car.com",
+    description: "Complete e-commerce platform with cart, checkout, and admin dashboard.",
+    image: Screenshot ,
+    tags: ["Next.js", "Stripe", "Sanity CMS"],
+    link: "https://taste-its.vercel.app/",
+  }
   // Add more projects here
 ];
-
 const Projects = () => {
   return (
     <section className="bg-[#f9f9f9] py-16 px-6" id="projects">
