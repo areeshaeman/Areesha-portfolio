@@ -9,6 +9,7 @@ import screenshot4 from "../../../assets/Screenshot 2025-11-03 032248.png"
 import screenshot5 from "../../../assets/Screenshot 2025-11-04 075325.png"
 import screenshot6 from "../../../assets/Screenshot 2025-11-04 193336.png"
 import screenshot7 from "../../../assets/Screenshot 2025-11-04 194727.png"
+import screenshot8 from "../../../assets/Screenshot 2025-11-05 085957.png"
 
 
 const projects = [
@@ -20,11 +21,11 @@ const projects = [
     link: "https://swift-cart-rosy.vercel.app/",
   },
   {
-    title: "Netflix Clone",
-    description: "etflix Clone is a fully responsive movie streaming web application inspired by the original Netflix interface. It allows users to browse, search, and stream movies or TV shows with a visually rich UI and Firebase-powered authentication.",
-    image: screenshot6,
-    tags: ["React", "Firebase", "Tailwind CSS"],
-    link: "https://your-netflix-clone.vercel.app",
+    title: "Today Weather",
+    description: "A modern and responsive weather application that provides real-time weather updates for any location. Users can search for cities, view current conditions, temperature, humidity, wind speed, and a 7-day forecast",
+    image: screenshot8,
+    tags: ["Html", "Css", "js"],
+    link: "https://areeshaeman.github.io/Today-weather/",
   },
     {
     title:"Roack Trader",
@@ -60,7 +61,14 @@ const projects = [
     image: screenshot5 ,
     tags: ["HTML", "Bootstrap", " Aos"],
     link: "https://areeshaeman.github.io/Themebau/",
-  }
+  },
+    {
+    title: "Netflix Clone",
+    description: "etflix Clone is a fully responsive movie streaming web application inspired by the original Netflix interface. It allows users to browse, search, and stream movies or TV shows with a visually rich UI and Firebase-powered authentication.",
+    image: screenshot6,
+    tags: ["React", "Firebase", "Tailwind CSS"],
+    link: "https://your-netflix-clone.vercel.app",
+  },
   // Add more projects here
 ];
 const Projects = () => {
