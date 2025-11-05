@@ -134,7 +134,7 @@ export default function PortfolioFooter() {
       id="contact"
       className="bg-[#F0EADC] border-t-4 border-[#701C1C] mt-12"
     >
-      <div className="max-w-6xl mx-auto my-12 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-6xl mx-auto my-12 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
         {/* Brand Section */}
         <div className="text-center sm:text-left">
           <h2 className="text-2xl font-bold text-[#701C1C]">Areesha Eman</h2>
@@ -236,7 +236,7 @@ export default function PortfolioFooter() {
             />
             <button
               type="submit"
-              className="bg-[#701C1C] text-[#F0EADC] px-4 py-2 rounded-md font-semibold hover:opacity-90 transition"
+              className="bg-[#701C1C] text-[#F0EADC] px-2 py-2 rounded-md font-semibold hover:opacity-90 transition"
             >
               Subscribe
             </button>

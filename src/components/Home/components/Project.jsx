@@ -6,49 +6,60 @@ import Screenshot1 from "../../../assets/Screenshot 2025-08-02 033231.png"
 import screenshot2 from "../../../assets/Screenshot 2025-09-04 220943.png"
 import  screenshot3 from "../../../assets/Screenshot 2025-11-03 024209.png"
 import screenshot4 from "../../../assets/Screenshot 2025-11-03 032248.png"
+import screenshot5 from "../../../assets/Screenshot 2025-11-04 075325.png"
+import screenshot6 from "../../../assets/Screenshot 2025-11-04 193336.png"
+import screenshot7 from "../../../assets/Screenshot 2025-11-04 194727.png"
+
 
 const projects = [
   {
     title: "Swift Cart",
-    description: "Full-stack task management app with authentication and drag-and-drop functionality.",
+    description: "Swift Cart is a modern e-commerce web application built to deliver a fast, seamless, and user-friendly online shopping experience. It allows users to browse products, add them to cart and responsive interface.",
     image: screenshot4,
     tags: ["React", "Node.js", "MongoDB"],
     link: "https://swift-cart-rosy.vercel.app/",
   },
   {
     title: "Netflix Clone",
-    description: "A clone of Netflix using Firebase for auth and TMDB for movies.",
-    image: "/assets/netflixclone.png",
+    description: "etflix Clone is a fully responsive movie streaming web application inspired by the original Netflix interface. It allows users to browse, search, and stream movies or TV shows with a visually rich UI and Firebase-powered authentication.",
+    image: screenshot6,
     tags: ["React", "Firebase", "Tailwind CSS"],
     link: "https://your-netflix-clone.vercel.app",
   },
+    {
+    title:"Roack Trader",
+    description: "This project is a custom Shopify store built to provide a professional and engaging online shopping experience. The store features a clean, responsive layout, product collections, and a seamless checkout process",
+    image: screenshot7 ,
+    tags: ["Next.js", "Stripe", "css"],
+    link: "https://www.raochtrader.com/",
+  },
   {
     title:"Taste it",
-    description: "Complete e-commerce platform with cart, checkout, and admin dashboard.",
+    description: "Taste It is a modern restaurant landing page that highlights experience through elegant visuals, smooth animations & a clean layout. It’s designed to attract customers with mouth-watering imagery",
     image: screenshot2 ,
-    tags: ["Next.js", "Stripe", "Sanity CMS"],
+    tags: ["Html", "Stripe", "Css"],
     link: "https://taste-its.vercel.app/",
   },
     {
     title:"Car.com",
-    description: "Complete e-commerce platform with cart, checkout, and admin dashboard.",
+    description: "Car.com is a modern, responsive car rental website designed to provide a seamless user experience for browsing and booking premium cars online. ",
     image: screenshot3 ,
-    tags: ["Next.js", "Stripe", "Sanity CMS"],
+    tags: ["JS", "HTML", "Css"],
     link: "https://cars-com-55zv.vercel.app/",
   },
       {
-    title:"Car.com",
-    description: "Complete e-commerce platform with cart, checkout, and admin dashboard.",
+    title:"Mobrise",
+    description: "Mobrise is a business landing website built to promote modern tech and startup solutions. It features a clean, corporate-style interface with engaging visuals, and smooth scrolling effects to ensure a premium user experience.",
     image: Screenshot1 ,
-    tags: ["Next.js", "Stripe", "Sanity CMS"],
+    tags: ["HTML", "Tailwind", "Aos"],
     link: "https://taste-its.vercel.app/",
   },
       {
-    title:"Car.com",
-    description: "Complete e-commerce platform with cart, checkout, and admin dashboard.",
-    image: Screenshot ,
-    tags: ["Next.js", "Stripe", "Sanity CMS"],
-    link: "https://taste-its.vercel.app/",
+    title:"Themebau",
+    description: "Themebau is a modern and minimal portfolio website built to showcase creative projects with smooth animations and a refined aesthetic. It focuses on elegant & pixel-perfect layout",
+    image: screenshot5 ,
+    tags: ["HTML", "Bootstrap", " Aos"],
+    link: "https://areeshaeman.github.io/Themebau/",
   }
   // Add more projects here
 ];

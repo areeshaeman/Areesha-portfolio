@@ -221,10 +221,10 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row sm:space-x-2 sm:justify-center md:justify-start space-y-2 sm:space-y-0">
               <span className="bg-[#701C1C] text-white px-3 py-1 w-max text-xs sm:text-sm font-semibold mx-auto md:mx-0">
                 FRONTEND DEVELOPER / DESIGNER
-              </span>
-              <span className="bg-[#701C1C] text-white px-3 py-1 w-max text-xs sm:text-sm font-semibold mx-auto md:mx-0">
+              </span> 
+              <h1 className="bg-[#701C1C] text-white px-3 py-1 w-max text-xs sm:text-sm font-semibold mx-auto md:mx-0">
                 READY TO BUILD YOUR NEXT PROJECT
-              </span>
+              </h1>
             </div>
 
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-md mx-auto md:mx-0">
