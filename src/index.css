@@ -13,3 +13,6 @@
 .animate-pulse-slow {
   animation: pulse-slow 8s infinite ease-in-out;
 }
+html {
+  scroll-behavior: smooth;
+}

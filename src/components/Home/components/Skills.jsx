@@ -159,7 +159,7 @@ import React from "react";
 
 export default function Skills() {
   return (
-    <div className="min-h-screen bg-[#701C1C] text-[#F0EADC] font-sans p-10"   id="about">
+    <div className="min-h-screen bg-[#701C1C] text-[#F0EADC] font-sans p-10" >
       {/* Heading */}
       <h1 className="text-4xl font-bold border-l-8 border-[#F0EADC] pl-4 mb-6 uppercase">
         About Me

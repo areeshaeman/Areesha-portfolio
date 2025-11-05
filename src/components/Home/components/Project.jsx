@@ -65,7 +65,7 @@ const projects = [
 ];
 const Projects = () => {
   return (
-    <section className="bg-[#f9f9f9] py-16 px-6" id="projects">
+    <section className="bg-[#f9f9f9] py-16 px-6" >
       <h2 className="text-4xl font-bold text-center text-[#701C1C] mb-12">
         My Projects
       </h2>

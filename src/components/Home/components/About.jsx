@@ -250,7 +250,7 @@ const skills = [
 const SkillsSection = () => {
   return (
     <section
-      id="skills"
+     
       className="bg-[#F0EADC] text-[#701C1C] py-24 px-6 flex flex-col items-center"
     >
       {/* Section Title */}

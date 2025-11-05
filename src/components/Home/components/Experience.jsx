@@ -17,7 +17,7 @@ const ExperienceEducation = () => {
   };
 
   return (
-    <main  id="experience" className="max-w-6xl mx-auto my-12 p-6 bg-[#F0EADC] min-h-screen text-[#701C1C] font-sans">
+    <main  className="max-w-6xl mx-auto my-12 p-6 bg-[#F0EADC] min-h-screen text-[#701C1C] font-sans">
       {/* Header */}
       <header className="flex flex-col md:flex-row items-center gap-4 mb-10">
         <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl bg-[#701C1C] text-white flex items-center justify-center text-2xl font-bold shadow-lg">
@@ -51,11 +51,10 @@ const ExperienceEducation = () => {
 
 
             <div className="relative">
-              <h3 className="font-semibold">Intern — Codelab</h3>
-              <p className="text-sm text-gray-600 mb-1">Dec 2023 — May 2024</p>
+              <h3 className="font-semibold">Fronted developer — Codelab</h3>
+              <p className="text-sm text-gray-600 mb-1">Dec 2023 — oct 2025</p>
               <p className="text-gray-700 text-sm">
-                Assisted in developing landing pages and helped increase signup
-                conversion by 12%.
+                Assisted in creating dynamic web pages, optimized front-end performance, and collaborated with designers to implement responsive designs
               </p>
             </div>
           </div>
