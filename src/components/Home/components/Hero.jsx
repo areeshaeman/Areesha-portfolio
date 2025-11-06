@@ -180,7 +180,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#F0EADC] flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen bg-[#D9D9D9] flex items-center justify-center overflow-hidden">
       {/* Particle Background */}
       <Particles
         id="tsparticles"
@@ -211,18 +211,18 @@ const Hero = () => {
           
           {/* Left Content */}
           <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
-            <h2 className="text-[#701C1C] text-lg sm:text-xl font-bold">
+            <h2 className="text-[#40342D] text-lg sm:text-xl font-bold">
               HI THERE!
             </h2>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-              I'M <span className="text-[#701C1C]">AREESHA</span>
+              I'M <span className="text-[#40342D]">AREESHA</span>
             </h1>
 
             <div className="flex flex-col sm:flex-row sm:space-x-2 sm:justify-center md:justify-start space-y-2 sm:space-y-0">
-              <span className="bg-[#701C1C] text-white px-3 py-1 w-max text-xs sm:text-sm font-semibold mx-auto md:mx-0">
+              <span className="bg-[#40342D] text-white px-3 py-1 w-max text-xs sm:text-sm font-semibold mx-auto md:mx-0">
                 FRONTEND DEVELOPER / DESIGNER
               </span> 
-              <h1 className="bg-[#701C1C] text-white px-3 py-1 w-max text-xs sm:text-sm font-semibold mx-auto md:mx-0">
+              <h1 className="bg-[#40342D] text-white px-3 py-1 w-max text-xs sm:text-sm font-semibold mx-auto md:mx-0">
                 READY TO BUILD YOUR NEXT PROJECT
               </h1>
             </div>
@@ -232,14 +232,14 @@ const Hero = () => {
               on the web. Let's build something amazing together.
             </p>
 
-            <button className="bg-[#701C1C] text-white px-5 py-2 mt-2 rounded-full hover:bg-yellow-500 hover:text-black transition text-sm sm:text-base">
+            <button className="bg-[#8C7C6D] text-white px-5 py-2 mt-2 rounded-full hover:bg-[#40342D]  transition text-sm sm:text-base">
               MORE ABOUT ME
             </button>
           </div>
 
           {/* Right Image */}
           <div className="w-full md:w-1/2 relative flex justify-center mt-8 md:mt-0">
-            <div className="rounded-full overflow-hidden w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 border-4 border-[#701C1C]">
+            <div className="rounded-full overflow-hidden w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 border-4 border-[#40342D]">
               <img
                 src="https://i.pinimg.com/736x/9f/99/61/9f9961e2086884023420b16d360d0f62.jpg"
                 alt="Areesha"
@@ -249,16 +249,16 @@ const Hero = () => {
 
             {/* Icons beside image */}
             <div className="absolute right-0 top-1/2 transform -translate-y-1/2 space-y-4 mr-[-25px] hidden lg:flex flex-col items-center">
-              <div className="bg-black text-white w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-[#701C1C] transition">
+              <div className="bg-black text-white w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-[#40342D] transition">
                 <i className="fas fa-user"></i>
               </div>
-              <div className="bg-black text-white w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-[#701C1C] transition">
+              <div className="bg-black text-white w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-[#40342D] transition">
                 <i className="fas fa-briefcase"></i>
               </div>
-              <div className="bg-black text-white w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-[#701C1C] transition">
+              <div className="bg-black text-white w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-[#40342D] transition">
                 <i className="fas fa-comments"></i>
               </div>
-              <div className="bg-black text-white w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-[#701C1C] transition">
+              <div className="bg-black text-white w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-[#40342D] transition">
                 <i className="fas fa-bullhorn"></i>
               </div>
             </div>

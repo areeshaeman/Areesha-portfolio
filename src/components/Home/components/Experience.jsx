@@ -17,14 +17,14 @@ const ExperienceEducation = () => {
   };
 
   return (
-    <main  className="max-w-6xl mx-auto my-12 p-6 bg-[#F0EADC] min-h-screen text-[#701C1C] font-sans">
+    <main  className="max-w-6xl mx-auto my-12 p-6 bg-[#D9D9D9] min-h-screen text-[#40342D] font-sans">
       {/* Header */}
       <header className="flex flex-col md:flex-row items-center gap-4 mb-10">
-        <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl bg-[#701C1C] text-white flex items-center justify-center text-2xl font-bold shadow-lg">
+        <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl bg-[#40342D] text-white flex items-center justify-center text-2xl font-bold shadow-lg">
           EX
         </div>
         <div>
-          <h1 className="text-3xl font-bold">Experience & Education</h1>
+          <h1 className="text-3xl font-bold  text-[#40342D]">Experience & Education</h1>
           <p className="text-gray-600 text-sm md:text-base max-w-2xl">
             A concise timeline of relevant roles, projects, and academic background.
             Swap entries with your own details to fit your portfolio.
@@ -37,11 +37,11 @@ const ExperienceEducation = () => {
         {/* Experience */}
         <div className="bg-white/60 rounded-xl shadow-lg backdrop-blur-sm p-5">
           <h2 className="text-xl font-semibold mb-3">Professional Experience</h2>
-          <div className="relative border-l-4 border-[#701C1C] pl-4 space-y-6 space-x-12">
+          <div className="relative border-l-4 border-[#40342D] pl-4 space-y-6 space-x-12">
             <div className="relative">
               <h3 className="font-semibold">Senior Frontend Developer — Upwork.</h3>
               <p className="text-sm text-gray-600 mb-1">
-                Jan 2024 — Present · Remote <span className="bg-[#701C1C]/10 text-[#701C1C] px-2 py-0.5 rounded-full ml-2">Full-time</span>
+                Jan 2024 — Present · Remote <span className="bg-[#701C1C]/10 text-[#40342D] px-2 py-0.5 rounded-full ml-2">Full-time</span>
               </p>
               <p className="text-gray-700 text-sm">
                 Leading the frontend team to build scalable React applications using
@@ -63,7 +63,7 @@ const ExperienceEducation = () => {
         {/* Education */}
         <div className="bg-white/60 rounded-xl shadow-lg backdrop-blur-sm p-5">
           <h2 className="text-xl font-semibold mb-3">Education</h2>
-          <div className="relative border-l-4 border-[#701C1C] pl-4 space-y-6">
+          <div className="relative border-l-4 border-[#40342D] pl-4 space-y-6">
             <div className="relative">
               <div className="flex justify-between items-center">
                 <div>
@@ -100,13 +100,13 @@ const ExperienceEducation = () => {
       <div className="flex flex-col md:flex-row items-center gap-3 mt-8">
         <button
           onClick={handleDownload}
-          className="bg-[#701C1C] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#5c1818] transition"
+          className="bg-[#40342D] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#40342D] transition"
         >
           Download HTML
         </button>
         <button
           onClick={handlePrint}
-          className="border border-[#701C1C] text-[#701C1C] px-4 py-2 rounded-lg hover:bg-[#701C1C]/10 transition"
+          className="border border-[#40342D] text-[#40342D] px-4 py-2 rounded-lg hover:bg-[#40342D]/10 transition"
         >
           Print
         </button>

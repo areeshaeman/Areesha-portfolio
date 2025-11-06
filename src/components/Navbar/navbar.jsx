@@ -7,13 +7,13 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const linkClasses =
-    "hover:text-yellow-300 cursor-pointer transition-colors duration-300";
+    "hover:text-[#8C7C6D] cursor-pointer transition-colors duration-300";
 
   return (
-    <nav className="bg-[#701C1C] text-white px-8 py-3 rounded-full w-11/12 max-w-6xl mx-auto flex items-center justify-between mt-6 shadow-lg absolute top-4 left-0 right-0 z-50 backdrop-blur-sm">
+    <nav className="bg-[#40342D] text-white px-8 py-3 rounded-full w-11/12 max-w-6xl mx-auto flex items-center justify-between mt-6 shadow-lg absolute top-4 left-0 right-0 z-50 backdrop-blur-sm">
       {/* Logo */}
       <div className="flex items-center space-x-2">
-        <div className="bg-yellow-400 w-8 h-8 rounded-full flex items-center justify-center text-black font-bold">
+        <div className="bg-[#A69C94] w-8 h-8 rounded-full flex items-center justify-center text-black font-bold">
           AE
         </div>
         <span className="text-white font-semibold text-lg">Areesha.</span>
@@ -34,7 +34,7 @@ const Navbar = () => {
         to="contact"
         smooth={true}
         duration={600}
-        className="hidden md:block bg-white text-[#701C1C] px-5 py-1.5 rounded-full font-semibold text-sm hover:bg-yellow-300 hover:text-[#701C1C] transition-all duration-300 cursor-pointer"
+        className="hidden md:block bg-white text-[#8C7C6D] px-5 py-1.5 rounded-full font-semibold text-sm hover:bg-[#A69C94] hover:text-[#F2F2F2] transition-all duration-300 cursor-pointer"
       >
         Contact Me
       </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-0 right-0 bg-[#701C1C]/95 backdrop-blur-md rounded-2xl w-11/12 mx-auto flex flex-col items-center space-y-4 py-6 text-sm font-medium shadow-lg md:hidden transition-all duration-500">
+        <div className="absolute top-16 left-0 right-0 bg-[#8C7C6D]/95 backdrop-blur-md rounded-2xl w-11/12 mx-auto flex flex-col items-center space-y-4 py-6 text-sm font-medium shadow-lg md:hidden transition-all duration-500">
           {["home", "about", "skills", "projects", "experience", "contact"].map((item) => (
             <Link
               key={item}
@@ -65,7 +65,7 @@ const Navbar = () => {
             smooth={true}
             duration={600}
             onClick={toggleMenu}
-            className="bg-yellow-400 text-[#701C1C] px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300 cursor-pointer"
+            className="bg-[#8C7C6D] text-[#8C7C6D] px-6 py-2 rounded-full font-semibold hover:bg-[#A69C94] transition-all duration-300 cursor-pointer"
           >
             Contact Me
           </Link>

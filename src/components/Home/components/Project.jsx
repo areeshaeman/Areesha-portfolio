@@ -73,8 +73,8 @@ const projects = [
 ];
 const Projects = () => {
   return (
-    <section className="bg-[#f9f9f9] py-16 px-6" >
-      <h2 className="text-4xl font-bold text-center text-[#701C1C] mb-12">
+    <section className="bg-[#F2F2F2] py-16 px-6" >
+      <h2 className="text-4xl font-bold text-center text-[#40342D] mb-12">
         My Projects
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -104,7 +104,7 @@ const Projects = () => {
                 {project.tags.map((tag, i) => (
                   <span
                     key={i}
-                    className="text-xs bg-[#701C1C] text-white px-2 py-1 rounded-full"
+                    className="text-xs bg-[#40342D] text-white px-2 py-1 rounded-full"
                   >
                     {tag}
                   </span>
