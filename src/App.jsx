@@ -1,19 +1,18 @@
-
-import './App.css'
-import { Routes ,Route } from 'react-router-dom'
-import Home from './components/Home/home'
-import Navbar from './components/Navbar/navbar'
+// portfolio updated
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home/home";
+import Navbar from "./components/Navbar/navbar";
 function App() {
-
   return (
     <>
-    <Navbar/>
+      <Navbar />
 
-    <Routes>
-       <Route    path='/'  element={<Home/>}  />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
