@@ -10,15 +10,23 @@ import screenshot5 from "../../../assets/Screenshot 2025-11-04 075325.png"
 import screenshot6 from "../../../assets/Screenshot 2025-11-04 193336.png"
 import screenshot7 from "../../../assets/Screenshot 2025-11-04 194727.png"
 import screenshot8 from "../../../assets/Screenshot 2025-11-05 085957.png"
+import Fashion from "../../../assets/Fashion.png"
 
 
 const projects = [
   {
-    title: "Swift Cart",
+    title: "Fashion",
     description: "Swift Cart is a modern e-commerce web application built to deliver a fast, seamless, and user-friendly online shopping experience. It allows users to browse products, add them to cart and responsive interface.",
     image: screenshot4,
-    tags: ["React", "Node.js", "MongoDB"],
+    tags: ["React", "Node.js"],
     link: "https://swift-cart-rosy.vercel.app/",
+  },
+    {
+    title: "Fashion",
+    description: "A modern fashion e-commerce website built with React and Redux Toolkit Query. It features dynamic product fetching, clean UI, responsive design, and optimized state management using RTK Query. Deployed on Vercel.",
+    image:Fashion ,
+    tags: ["React", "Node.js","RTK Query"],
+    link: "https://fashion-zjqx.vercel.app/",
   },
   {
     title: "Today Weather",

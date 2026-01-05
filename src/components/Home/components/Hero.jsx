@@ -180,7 +180,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#D9D9D9] flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen bg-[] flex items-center justify-center overflow-hidden">
       {/* Particle Background */}
       <Particles
         id="tsparticles"
