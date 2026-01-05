@@ -61,7 +61,7 @@ const projects = [
     description: "Mobrise is a business landing website built to promote modern tech and startup solutions. It features a clean, corporate-style interface with engaging visuals, and smooth scrolling effects to ensure a premium user experience.",
     image: Screenshot1 ,
     tags: ["HTML", "Tailwind", "Aos"],
-    link: "https://taste-its.vercel.app/",
+    link: "https://areeshaeman.github.io/Mobrise/",
   },
       {
     title:"Themebau",
