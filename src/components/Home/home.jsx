@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Project";
 import PortfolioFooter from "./components/footer";
 import Experience from "./components/Experience";
+import FrontendRules from "./components/FrontendRules";
 
 const Home = () => {
   return (
@@ -19,6 +20,11 @@ const Home = () => {
 
       <section id="skills">
         <Skills />
+      </section>
+
+      <section>
+
+        <FrontendRules/>
       </section>
 
       <section id="projects">

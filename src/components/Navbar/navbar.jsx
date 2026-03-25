@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-scroll"; // ✅ import
+import { Link } from "react-scroll";
+import { motion, AnimatePresence } from "framer-motion"; // ✅ add framer-motion
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,8 +10,15 @@ const Navbar = () => {
   const linkClasses =
     "hover:text-[#8C7C6D] cursor-pointer transition-colors duration-300";
 
+  // Animation variants for framer-motion
+  const menuVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -20 },
+  };
+
   return (
-    <nav className="bg-[#40342D] text-white px-8 py-3 rounded-full w-11/12 max-w-6xl mx-auto flex items-center justify-between mt-6 shadow-lg absolute top-4 left-0 right-0 z-50 backdrop-blur-sm">
+    <nav className="bg-[#40342D] text-white px-8 py-3 rounded-full w-11/12 max-w-7xl mx-auto flex items-center justify-between mt-6 shadow-lg absolute top-4 left-0 right-0 z-50 backdrop-blur-sm">
       {/* Logo */}
       <div className="flex items-center space-x-2">
         <div className="bg-[#A69C94] w-8 h-8 rounded-full flex items-center justify-center text-black font-bold">
@@ -21,12 +29,15 @@ const Navbar = () => {
 
       {/* Desktop Nav Links */}
       <ul className="hidden md:flex space-x-6 text-sm font-medium">
-        <li><Link to="home" smooth={true} duration={600} className={linkClasses}>Home</Link></li>
-        <li><Link to="about" smooth={true} duration={600} className={linkClasses}>About</Link></li>
-        <li><Link to="skills" smooth={true} duration={600} className={linkClasses}>Skills</Link></li>
-        <li><Link to="projects" smooth={true} duration={600} className={linkClasses}>Projects</Link></li>
-        <li><Link to="experience" smooth={true} duration={600} className={linkClasses}>Experience</Link></li>
-        <li><Link to="contact" smooth={true} duration={600} className={linkClasses}>Contact</Link></li>
+        {["home", "about", "skills", "projects", "experience", "contact"].map(
+          (item) => (
+            <li key={item}>
+              <Link to={item} smooth={true} duration={600} className={linkClasses}>
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+              </Link>
+            </li>
+          )
+        )}
       </ul>
 
       {/* Desktop Contact Button */}
@@ -44,33 +55,45 @@ const Navbar = () => {
         {isOpen ? <X size={26} /> : <Menu size={26} />}
       </button>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="absolute top-16 left-0 right-0 bg-[#8C7C6D]/95 backdrop-blur-md rounded-2xl w-11/12 mx-auto flex flex-col items-center space-y-4 py-6 text-sm font-medium shadow-lg md:hidden transition-all duration-500">
-          {["home", "about", "skills", "projects", "experience", "contact"].map((item) => (
+      {/* Mobile Menu with animation */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            key="mobile-menu"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={menuVariants}
+            transition={{ duration: 0.3 }}
+            className="absolute top-16 left-0 right-0 bg-[#8C7C6D]/95 backdrop-blur-md rounded-2xl w-11/12 mx-auto flex flex-col items-center space-y-4 py-6 text-sm font-medium shadow-lg md:hidden"
+          >
+            {["home", "about", "skills", "projects", "experience", "contact"].map(
+              (item) => (
+                <Link
+                  key={item}
+                  to={item}
+                  smooth={true}
+                  duration={600}
+                  onClick={toggleMenu}
+                  className={linkClasses}
+                >
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                </Link>
+              )
+            )}
+
             <Link
-              key={item}
-              to={item}
+              to="contact"
               smooth={true}
               duration={600}
               onClick={toggleMenu}
-              className={linkClasses}
+              className="bg-[#8C7C6D] text-[#8C7C6D] px-6 py-2 rounded-full font-semibold hover:bg-[#A69C94] transition-all duration-300 cursor-pointer"
             >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
+              Contact Me
             </Link>
-          ))}
-
-          <Link
-            to="contact"
-            smooth={true}
-            duration={600}
-            onClick={toggleMenu}
-            className="bg-[#8C7C6D] text-[#8C7C6D] px-6 py-2 rounded-full font-semibold hover:bg-[#A69C94] transition-all duration-300 cursor-pointer"
-          >
-            Contact Me
-          </Link>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
